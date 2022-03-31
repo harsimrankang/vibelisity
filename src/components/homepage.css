@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #6439a9;
+  }
+  
+  /* .container {
+    width: 100%;
+    padding: 0px;
+     margin: 0 0; 
+  }
+   */
+
+  .image-stack {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .image-stack__item--bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    z-index: -1;
+  }
+  
+  .image-stack__item--top {
+    padding-top: 200px; 
+     /* padding-left: 3%;   */
+    width: 100%; 
+  }
+  .image-stack__item--top1 {
+    padding-top: 190px; 
+       align-self: center;
+    width: 480px; 
+    height: 280px;
+  }
+  
+  .imgtag {
+    width: 100%;
+    display: block;
+  }
+  
+  

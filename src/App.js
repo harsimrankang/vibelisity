@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import Homepage from './components/homepage';
+import Tourtravels from './components/tours';
+import handleWindowResize from './components/handleWindowResize';
+import Cafes from './components/cafe';
+const App = () => {
+  let { height, width } = handleWindowResize();
+    return (
+      <>
+        <div
+          style={{
+            height: height,
+            width: width,
+            position: 'fixed',
+            zIndex: -10,
+            backgroundColor: 'rgba(0, 38, 31, 1)'
+          }}
+        ></div>
+        <Navbar />
+        <Switch>
+         <Route exact path='/toursTravels' component={Tourtravels} />
+         <Route exact path='/cafe' component={Cafes} />
+          <Route exact path='/' component={Homepage} />
+        </Switch>
+      </>
+    );
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+};
 
 export default App;
+
