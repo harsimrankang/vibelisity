@@ -14,9 +14,9 @@ const Navbar = (props) => {
       }}
     >
       <Row className='col-12'>
-        <Col className='col-2'>
+        <Link to='/' className='col-2' style={{ textDecoration: 'none' }}>
           <Image src={navbarlogo} height='55px' width='80px'></Image>
-        </Col>
+        </Link>
         <Col
           className='col-10 pt-2 ml-auto'
           style={{
@@ -28,19 +28,27 @@ const Navbar = (props) => {
         >
           <Row className='col-12 '>
             <Col className='col-7'></Col>
-            <Col className='col-1'>Clothing</Col>
+            <Link
+              to='/clothing'
+              className='col-1 text-white'
+              style={{ textDecoration: 'none' }}
+            >
+              Clothing{' '}
+            </Link>
             <Link
               to='/toursTravels'
               className='col-1 text-white'
-              style={{ textDecoration: 'none', }}
+              style={{ textDecoration: 'none' }}
             >
               Travel
             </Link>
             <Link
               to='/cafe'
               className='col-1 text-white'
-              style={{ textDecoration: 'none', }}
-            >Tree Cafes</Link>
+              style={{ textDecoration: 'none' }}
+            >
+              Tree Cafes
+            </Link>
             <Col className='col-2'>Coming Soon</Col>
           </Row>
         </Col>

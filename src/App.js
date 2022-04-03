@@ -6,6 +6,7 @@ import Homepage from './components/homepage';
 import Tourtravels from './components/tours';
 import handleWindowResize from './components/handleWindowResize';
 import Cafes from './components/cafe';
+import Clothing from './components/clothing';
 const App = () => {
   let { height, width } = handleWindowResize();
     return (
@@ -23,6 +24,7 @@ const App = () => {
         <Switch>
          <Route exact path='/toursTravels' component={Tourtravels} />
          <Route exact path='/cafe' component={Cafes} />
+         <Route exact path='/clothing' component={Clothing} />
           <Route exact path='/' component={Homepage} />
         </Switch>
       </>
