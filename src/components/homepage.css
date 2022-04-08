@@ -47,7 +47,7 @@
   }
   .zoom-in-out-box {
     width: 85%;
-    animation: zoom-in-zoom-out 1s ease ;
+    animation: zoom-in-zoom-out 2.5s ease ;
     animation-fill-mode: forwards;
   }
   

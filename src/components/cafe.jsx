@@ -12,8 +12,8 @@ const Cafes = () => {
         </div>
         <div className='col-6 pt-5 px-5 clothing-text'>
           <Row className='col-12 px-4' style={{
-              fontWeight: '500',
-              fontSize: '50px',
+              fontWeight: '600',
+              fontSize: '84px',
             }}>Amazing Cafe Experiences</Row>
             <div className="d-flex pt-3 px-2">
               <Image src={arrow} height='24px' width='24px'></Image>

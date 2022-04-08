@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import jogger from '../Images/joggs.png';
 import purse from '../Images/purse.png';
 import shirt from '../Images/tshirt.png';
+import jeans from '../Images/jeans.png';
 import './clothing.css';
 const Clothing = () => {
   return (
@@ -26,7 +27,7 @@ const Clothing = () => {
         style={{ position: 'relative', height: '0px', width: '100%' }}
       >
         <div
-          className='mx-0'
+          className='d-flex mx-0 justify-content-center'
           style={{
             // position: 'absolute',
             // top: '0px',
@@ -34,12 +35,15 @@ const Clothing = () => {
             // hegiht: "800px",
             // overflow: 'hidden',
             zIndex: 0,
-            paddingLeft: "100px",
-            paddingRight: "100px",
+            // paddingLeft: "100px",
+            // paddingRight: "100px",
           }}
         >
-          <img className='px-5 imgtag' src={shirt} style={{
-              height:"950px"
+          <img className='px-5 d-flex imgtag clothing-slideBottomHide-img' src={shirt} style={{
+              height:"950px", position:"absolute", top: "0px"
+          }} alt='' />
+          <img className='px-5 d-flex imgtag clothing-slideBottomNoHide-img' src={jeans} style={{
+              height:"950px",width:'790px', position:"absolute", top: "0px"
           }} alt='' />
         </div>
       </div>
