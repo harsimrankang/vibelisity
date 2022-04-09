@@ -65,3 +65,21 @@
     opacity: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .cloth-text{
+   padding-top: 290px;
+   font-size: 64px;
+  }
+  .tours-head{
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .cloth-text{
+padding-top: 180px;
+font-size: 85px;
+  }
+  .tours-head{
+    font-size: 90px;
+  }
+}

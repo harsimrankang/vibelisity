@@ -8,7 +8,9 @@ import purse from '../Images/purse.png';
 import shirt from '../Images/tshirt.png';
 import jeans from '../Images/jeans.png';
 import './clothing.css';
+import handleWindowResize from './handleWindowResize';
 const Clothing = () => {
+  let { height, width } = handleWindowResize();
   return (
     <div
       className=' pt-5'
@@ -40,10 +42,10 @@ const Clothing = () => {
           }}
         >
           <img className='px-5 d-flex imgtag clothing-slideBottomHide-img' src={shirt} style={{
-              height:"950px", position:"absolute", top: "0px"
+              height:7*height/8, position:"absolute", top: "0px", objectFit:"contain"
           }} alt='' />
           <img className='px-5 d-flex imgtag clothing-slideBottomNoHide-img' src={jeans} style={{
-              height:"950px",width:'790px', position:"absolute", top: "0px"
+              height:7*height/8, width:'790px', position:"absolute", top: "0px", objectFit:"contain"
           }} alt='' />
         </div>
       </div>
@@ -69,21 +71,11 @@ const Clothing = () => {
             lobortis in vitae elit, sit quam. Imperdiet id volutpat tellus nec.
             Vehicula ac magna dolor id elementum lacus
           </Row>
-          {/* <div
-            className='col-12 px-2 clothing-text'
-            style={{
-              fontWeight: '600',
-              fontSize: '96px',
-              paddingTop: '370px',
-            }}
-          >
-            Coolest Essentials
-          </div> */}
         </div>
         <div className='col-6 d-flex justify-content-center'>
           <div
             className='pl-5 clothing-img'
-            style={{ position: 'absolute', paddingTop: '380px', width: '60%' }}
+            style={{ position: 'absolute', paddingTop: '310px', width: '60%' }}
           >
             <div className='row col-12'>
               <div className='col-3'>
@@ -99,11 +91,11 @@ const Clothing = () => {
           </div>
         </div>
         <div
-            className='col-12 px-5 clothing-text'
+            className='col-12 px-5 clothing-text cloth-text'
             style={{
               fontWeight: '600',
-              fontSize: '96px',
-              paddingTop: '370px',  
+              // fontSize: '96px',
+              // paddingTop: '370px',  
               zIndex:2,
              
             }}

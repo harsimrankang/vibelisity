@@ -19,19 +19,19 @@ const Tourtravels = () => {
         height: '100%',
       }}
     >
-      <div class='row mx-0 px-0 w-100 py-5'>
-        <div className='col-6 pt-5 px-5 clothing-text'>
+      <div class='row col-12 mx-5 w-100 py-5'>
+        <div className='col-12 col-md-8 pt-4 pl-5 clothing-text tours-head'>
           <Row
             className='col-12 px-4'
             style={{
               fontWeight: '600',
-              fontSize: '128px',
+              // fontSize: '128px',
             }}
           >
             Tour & Travels
           </Row>
           <Row
-            className='col-8 px-4 pt-3'
+            className='col-12 col-md-8 px-4 pt-3 '
             style={{
               fontWeight: '400',
               fontSize: '22px',

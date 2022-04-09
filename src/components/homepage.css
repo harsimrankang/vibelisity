@@ -1,62 +1,108 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  p {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #6439a9;
-  }
-  
-  /* .container {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #6439a9;
+}
+
+/* .container {
     width: 100%;
     padding: 0px;
      margin: 0 0; 
   }
    */
 
-  .image-stack {
-    position: relative;
-    width: 100%;
-    padding: 0;
+.image-stack {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.image-stack__item--bottom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.image-stack__item--top {
+  padding-top: 200px;
+  /* padding-left: 3%;   */
+  width: 100%;
+}
+.image-stack__item--top1 {
+  padding-top: 190px;
+  align-self: center;
+  width: 480px;
+  height: 280px;
+}
+
+.imgtag {
+  width: 100%;
+  display: block;
+}
+.zoom-in-out-box {
+  width: 85%;
+  animation: zoom-in-zoom-out 2.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
   }
-  
-  .image-stack__item--bottom {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%; 
-    z-index: -1;
+  100% {
+    transform: scale(1.2, 1.2);
   }
-  
-  .image-stack__item--top {
-    padding-top: 200px; 
-     /* padding-left: 3%;   */
-    width: 100%; 
+}
+@media only screen and (min-width: 769px) {
+  .logo {
+    padding-top: 70px;
+    width: 380px;
+    /* height: 280px; */
+    object-fit: contain;
   }
-  .image-stack__item--top1 {
-    padding-top: 190px; 
-       align-self: center;
-    width: 480px; 
-    height: 280px;
+  .heading-text {
+    font-size: 170px;
   }
-  
-  .imgtag {
-    width: 100%;
-    display: block;
+  .head-body {
+    max-width: 800px;
   }
-  .zoom-in-out-box {
-    width: 85%;
-    animation: zoom-in-zoom-out 2.5s ease ;
-    animation-fill-mode: forwards;
+  .nav-text {
+    padding-top: 6px;
+    font-size: 18px;
   }
-  
-  @keyframes zoom-in-zoom-out {
-    0% {
-      transform: scale(1, 1);
-    }
-    100% {
-      transform: scale(1.2, 1.2);
-    }
+  .nav-logo {
+    height: 55px;
+    width: 80px;
+    object-fit: contain;
   }
-  
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    padding-top: 80px;
+    width: 290px;
+    /* height: 210px; */
+    object-fit: contain;
+  }
+  .heading-text {
+    /* padding-top: 10px; */
+    font-size: 80px;
+  }
+  .head-body {
+    max-width: 400px;
+  }
+  .nav-text {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .nav-logo {
+    height: 45px;
+    width: 60px;
+    object-fit: contain;
+  }
+}

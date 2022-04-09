@@ -8,19 +8,17 @@ const Cafes = () => {
     <div className="pt-5" style={{ backgroundColor: 'rgba(0, 38, 31, 1)', color: 'white', fontFamily: 'Signika', height:'100%'}}>
       <div class='row mx-0 px-0 w-100 py-5'>
       <div className='col-6 d-flex justify-content-center clothing-text'>
-          <Image src={cafe} />
+          <Image src={cafe}  width='400px' height='600px'/>
         </div>
         <div className='col-6 pt-5 px-5 clothing-text'>
           <Row className='col-12 px-4' style={{
               fontWeight: '600',
-              fontSize: '84px',
+              fontSize: '70px',
             }}>Amazing Cafe Experiences</Row>
-            <div className="d-flex pt-3 px-2">
-              <Image src={arrow} height='24px' width='24px'></Image>
-          </div>
-          <Row className='col-8 px-4 pt-5' style={{
+            
+          <Row className='col-12 px-4 pt-4 text-center' style={{
               fontWeight: '400',
-              fontSize: '22px',
+              fontSize: '20px',
             }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
             lobortis in vitae elit, sit quam. Imperdiet id volutpat tellus nec.
@@ -31,7 +29,9 @@ const Cafes = () => {
             Eros molestie facilisis quis ac non aliquam integer porttitor sit.
             Diam.
           </Row>
-          
+          <div className="d-flex pt-4 px-3">
+              <Image src={arrow} height='24px' width='24px'></Image>
+          </div>
         </div>
         
       </div>

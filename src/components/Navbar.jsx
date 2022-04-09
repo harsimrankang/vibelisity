@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import { Image, Row, Col } from 'react-bootstrap';
+import { Image,} from 'react-bootstrap';
 import navbarlogo from '../Images/navbarlogo.png';
+import './homepage.css';
 const Navbar = (props) => {
   return (
     <div
@@ -13,46 +14,46 @@ const Navbar = (props) => {
         width: '100%',
       }}
     >
-      <Row className='col-12'>
-        <Link to='/' className='col-2' style={{ textDecoration: 'none' }}>
-          <Image src={navbarlogo} height='55px' width='80px'></Image>
+      <div className='d-flex col-12'>
+        <Link to='/' className='d-flex' style={{ textDecoration: 'none' }}>
+          <Image src={navbarlogo} className='nav-logo' ></Image>
         </Link>
-        <Col
-          className='col-10 pt-2 ml-auto'
+        <div
+          className='d-flex flex-grow-1 justify-content-end nav-text'
           style={{
             color: 'white',
             fontFamily: 'Signika',
             fontWeight: '400',
-            fontSize: '18px',
           }}
         >
-          <Row className='col-12 '>
-            <Col className='col-7'></Col>
             <Link
               to='/clothing'
-              className='col-1 text-white'
+              className='d-flex px-md-3 px-1 text-white'
               style={{ textDecoration: 'none' }}
             >
               Clothing{' '}
             </Link>
             <Link
               to='/toursTravels'
-              className='col-1 text-white'
+              className='d-flex px-md-3 px-1 text-white'
               style={{ textDecoration: 'none' }}
             >
               Travel
             </Link>
             <Link
               to='/cafe'
-              className='col-1 text-white'
+              className='d-flex px-md-3 px-1 text-white'
               style={{ textDecoration: 'none' }}
             >
               Tree Cafes
             </Link>
-            <Col className='col-2'>Coming Soon</Col>
-          </Row>
-        </Col>
-      </Row>
+            <Link
+              to='/coming_soon'
+              className='d-flex px-md-3 px-1 text-white'
+              style={{ textDecoration: 'none' }}>Coming Soon</Link>
+
+        </div>
+      </div>
     </div>
   );
 };
