@@ -41,30 +41,47 @@ const Clothing = () => {
             // paddingRight: "100px",
           }}
         >
-          <img className='px-5 d-flex imgtag clothing-slideBottomHide-img' src={shirt} style={{
-              height:7*height/8, position:"absolute", top: "0px", objectFit:"contain"
-          }} alt='' />
-          <img className='px-5 d-flex imgtag clothing-slideBottomNoHide-img' src={jeans} style={{
-              height:7*height/8, width:'790px', position:"absolute", top: "0px", objectFit:"contain"
-          }} alt='' />
+          <img
+            className='px-5 d-flex imgtag clothing-slideBottomHide-img tshirt'
+            src={shirt}
+            style={{
+              // height: (7 * height) / 8,
+              position: 'absolute',
+             // top: '0px',
+              objectFit: 'cover',
+            }}
+            alt=''
+          />
+          <img
+            className='px-5 d-flex imgtag clothing-slideBottomNoHide-img jeans'
+            src={jeans}
+            style={{
+              // height: (7 * height) / 8,
+              width: '790px',
+              position: 'absolute',
+              // top: '0px',
+              objectFit: 'contain',
+            }}
+            alt=''
+          />
         </div>
       </div>
       <div class='row mx-0 px-0 w-100 py-5' style={{ zIndex: 3 }}>
-        <div className='col-6 pt-5 px-5'>
+        <div className='col-12 col-md-6 px-5'>
           <Row
-            className='col-12 px-4 clothing-text'
+            className='col-12 px-4 clothing-text head'
             style={{
               fontWeight: '500',
-              fontSize: '50px',
+              // fontSize: '50px',
             }}
           >
             Details
           </Row>
           <Row
-            className='col-8 px-4 pt-3 clothing-text'
+            className='col-12 col-md-8 px-4 clothing-text details'
             style={{
               fontWeight: '400',
-              fontSize: '22px',
+              // fontSize: '22px',
             }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci,
@@ -72,38 +89,42 @@ const Clothing = () => {
             Vehicula ac magna dolor id elementum lacus
           </Row>
         </div>
-        <div className='col-6 d-flex justify-content-center'>
+        <div className='col-12 col-md-6 d-flex justify-content-center'>
           <div
-            className='pl-5 clothing-img'
-            style={{ position: 'absolute', paddingTop: '310px', width: '60%' }}
+            className='clothing-img pics'
+            style={{ position: 'absolute',
+           //  paddingTop: '310px', width: '60%'
+             }}
           >
             <div className='row col-12'>
-              <div className='col-3'>
+              <div className='col-4 col-md-3 '>
                 <img className='imgtag rounded' src={purse} alt='' />
               </div>
-              <div className='col-3'>
+              <div className='col-4 col-md-3'>
                 <img className='imgtag rounded' src={shoes} alt='' />
               </div>
-              <div className='col-3'>
+              <div className='col-4 col-md-3'>
                 <img className='imgtag rounded' src={jogger} alt='' />
               </div>
             </div>
           </div>
         </div>
         <div
-            className='col-12 px-5 clothing-text cloth-text'
-            style={{
-              fontWeight: '600',
-              // fontSize: '96px',
-              // paddingTop: '370px',  
-              zIndex:2,
-             
-            }}
+          className='col-12 px-5 clothing-text cloth-text'
+          style={{
+            fontWeight: '600',
+            // fontSize: '96px',
+            // paddingTop: '370px',
+            zIndex: 2,
+          }}
+        >
+          <Link
+            to='/toursTravels'
+            style={{ textDecoration: 'none', color: 'white' }}
           >
-             <Link to='/toursTravels' style={{ textDecoration: 'none', color:'white' }}>
             Coolest Essentials
-            </Link>
-          </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

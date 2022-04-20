@@ -67,19 +67,67 @@
 }
 @media only screen and (max-width: 768px) {
   .cloth-text{
-   padding-top: 290px;
+   padding-top: 260px;
    font-size: 64px;
   }
   .tours-head{
     font-size: 40px;
   }
+  .head{
+    padding-top: 16px;
+    font-size: 45px;
+    justify-content: center;
+  }
+  .tshirt{
+    top: 25vh;
+    height: 60vh;
+    width: 60vh;
+  }
+  .jeans{
+    top: 25vh;
+    height: 60vh; 
+  }
+  .details{
+    padding-top: 470px;
+    font-size: 20px;
+    justify-content: center;
+  }
+  .pics{
+    padding-top: 80px;
+    width: 100%;
+    padding-left: 20px;
+  }
 }
 @media only screen and (min-width: 769px) {
   .cloth-text{
-padding-top: 180px;
+padding-top: 200px;
 font-size: 85px;
   }
   .tours-head{
     font-size: 90px;
   }
+  .head{
+    padding-top: 10px;
+    font-size: 50px;
+  }
+  .tshirt{
+    top: 8vh;
+    height: 80vh; 
+    width: 80vh;
+  }
+  .jeans{
+    top: 14vh;
+    height: 70vh; 
+  }
+  .details{
+    padding-top: 30px;
+    font-size: 22px;
+  }
+  .pics{
+    padding-top: 310px;
+    padding-bottom: 20px;
+    width: 70%;
+    padding-left: 30px;
+  }
+ 
 }
