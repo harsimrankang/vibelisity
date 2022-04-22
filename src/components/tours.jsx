@@ -25,14 +25,35 @@ const Tourtravels = () => {
             className='col-12 px-4'
             style={{
               fontWeight: '600',
+              position:"relative",
+              zIndex:'10'
               // fontSize: '128px',
             }}
           >
             Tour & Travels
           </Row>
+          <div className='col-12 col-md-6 d-flex justify-content-center clothing-img gifbg'
+        // style={{position:"fixed",}}
+        >
+          <div 
+            className="tourgif"
+          //   style={{
+          //   position:"fixed",
+          //   width: width>height?width*5/8:height*5/8,
+          //   height: width>height?width*5/8:height*5/8,
+          //   bottom: -height/8,
+          //   left: width/2+40
+          // }}
+          >
+          <Image style={{position:'absolute', width:"100%", height:"100%", zIndex: 2}} src={bg}/>
+          <Image style={{position:'absolute', width:"100%", height:"100%",}} src={tours} />
+          </div>
+        </div>
           <Row
-            className='col-12 col-md-8 px-4 pt-3 '
+            className='col-12 col-md-8 px-4 tourdetail'
             style={{
+              position:"relative",
+              zIndex:'10',
               fontWeight: '400',
               fontSize: '22px',
             }}
@@ -54,18 +75,23 @@ const Tourtravels = () => {
             <Image src={arrow} height='24px' width='24px'></Image>
           </Link>
         </div>
-        <div className='col-6 d-flex justify-content-center clothing-img'>
-          <div style={{
-            position:"fixed",
-            width: width>height?width*5/8:height*5/8,
-            height: width>height?width*5/8:height*5/8,
-            bottom: -height/8,
-            left: width/2+40
-          }}>
+        {/* <div className='col-12 col-md-6 d-flex justify-content-center clothing-img gifbg'
+        // style={{position:"fixed",}}
+        >
+          <div 
+            className="tourgif"
+          //   style={{
+          //   position:"fixed",
+          //   width: width>height?width*5/8:height*5/8,
+          //   height: width>height?width*5/8:height*5/8,
+          //   bottom: -height/8,
+          //   left: width/2+40
+          // }}
+          >
           <Image style={{position:'absolute', width:"100%", height:"100%", zIndex: 10}} src={bg}/>
           <Image style={{position:'absolute', width:"100%", height:"100%",}} src={tours} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
