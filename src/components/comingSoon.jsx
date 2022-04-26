@@ -48,19 +48,23 @@ const ComingSoon = () => {
                 </div>
                 <div className='col-12 d-flex justify-content-center py-3'>
                   <img
-                    className='px-4'
-                    style={{ height: '40px' }}
+                    className='px-4 logoimg'
+                    // style={{ height: '40px' }}
                     src={linkedIn}
                   />
-                  <img className='px-4' style={{ height: '40px' }} src={fb} />
                   <img
-                    className='px-4'
-                    style={{ height: '40px' }}
+                    className='logoimg px-4'
+                    // style={{ height: '40px' }}
+                    src={fb}
+                  />
+                  <img
+                    className='px-4 logoimg'
+                    // style={{ height: '40px' }}
                     src={whtsapp}
                   />
                   <img
-                    className='px-4'
-                    style={{ height: '40px' }}
+                    className='px-4 logoimg'
+                    // style={{ height: '40px' }}
                     src={insta}
                   />
                 </div>
@@ -83,7 +87,7 @@ const ComingSoon = () => {
             </div>
           </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
-            <div className='col-12 col-md-6 d-flex justify-content-center'>
+            <div className='col-10 col-md-6 d-flex justify-content-center'>
               <input
                 id='name_input'
                 className='d-flex form-control bg-transparent border-start-0 border-end-0 border-top-0 rounded-0'
@@ -93,7 +97,7 @@ const ComingSoon = () => {
             </div>
           </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
-            <div className='col-12 col-md-6 d-flex justify-content-center'>
+            <div className='col-10 col-md-6 d-flex justify-content-center'>
               <input
                 id='contact_input'
                 className='d-flex form-control bg-transparent border-start-0 border-end-0 border-top-0 rounded-0'
@@ -103,7 +107,7 @@ const ComingSoon = () => {
             </div>
           </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
-            <div className='col-12 col-md-6 d-flex justify-content-center'>
+            <div className='col-10 col-md-6 d-flex justify-content-center'>
               <input
                 id='email_input'
                 className='form-control bg-transparent border-start-0 border-end-0 border-top-0 rounded-0'
@@ -113,13 +117,19 @@ const ComingSoon = () => {
             </div>
           </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
-            <div className='col-12 col-md-6 d-flex justify-content-center'>
-            <img className='upload' src={upload} />
+            <div className='col-10 col-md-6 d-flex justify-content-center'>
+              <form action='/action_page.php'>
+                <input type='file' id='myFile' name='filename' style={{display:'none' }}/>
+                <button 
+                // onClick={() => this.refs.fileInput.click()}
+                ><img className='upload' src={upload} /></button>
+              </form>
+              {/* <img className='upload' src={upload} /> */}
             </div>
-            </div>
+          </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
             <Button
-              className='col-12 col-md-6'
+              className='col-10 col-md-6'
               style={{
                 backgroundColor: 'white',
                 borderColor: 'white',
@@ -135,7 +145,10 @@ const ComingSoon = () => {
           <img className='coming-soon' src={comimg} />
         </div>
       </div>
-      <div className="col-12 mx-0 d-flex justify-content-center mt-5" style={{ background:"rgb(229,229,229)"}}>
+      <div
+        className='col-12 mx-0 d-flex justify-content-center mt-5'
+        style={{ background: 'rgb(229,229,229)' }}
+      >
         <img className='endimg' src={endimg} />
       </div>
     </>

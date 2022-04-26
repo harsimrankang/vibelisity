@@ -18,6 +18,9 @@
     margin-left: 50px;
     width: 300px;
   }
+  .logoimg{
+    height: 30px;
+  }
 }
 @media only screen and (min-width: 769px) {
   #oursocials-parent {
@@ -49,6 +52,9 @@
 
   .upload {
     width: 650px;
+  }
+  .logoimg{
+    height: 40px;
   }
 }
 .endimg {
