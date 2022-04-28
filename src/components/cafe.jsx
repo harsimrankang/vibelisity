@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Row, Image, Col} from 'react-bootstrap';
 import arrow from '../Images/arrowright.png';
 import cafe from '../Images/cafe.png';
+import { Link } from 'react-router-dom';
 import './clothing.css';
 const Cafes = () => {
   return (
@@ -32,9 +33,11 @@ const Cafes = () => {
             Eros molestie facilisis quis ac non aliquam integer porttitor sit.
             Diam.
           </Row>
-          <div className="d-flex pt-4 px-3">
+          <Link className="d-flex pt-4 px-3"
+           to='/bakery'
+           style={{ textDecoration: 'none', color: 'white' }}>
               <Image src={arrow} height='24px' width='24px'></Image>
-          </div>
+          </Link>
         </div>
         
       </div>

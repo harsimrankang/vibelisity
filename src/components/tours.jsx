@@ -19,13 +19,13 @@ const Tourtravels = () => {
         height: '100%',
       }}
     >
-      <div class='row col-12 mx-5 w-100 py-5'>
-        <div className='col-12 col-md-8 pt-4 pl-5 clothing-text tours-head'>
+      <div class='row col-12 mx-0 w-100 py-5'>
+        <div className='col-12 col-md-8 pt-4 pl-5 mx-md-5 clothing-text '>
           <Row
-            className='col-12 px-4'
+            className='col-12 tours-head'
             style={{
               fontWeight: '600',
-              position:"relative",
+              // position:"relative",
               zIndex:'10'
               // fontSize: '128px',
             }}
@@ -52,7 +52,7 @@ const Tourtravels = () => {
           <Row
             className='col-12 col-md-8 px-4 tourdetail'
             style={{
-              position:"relative",
+              // position:"relative",
               zIndex:'10',
               fontWeight: '400',
               fontSize: '22px',

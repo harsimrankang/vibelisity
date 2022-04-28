@@ -48,6 +48,13 @@ const Navbar = (props) => {
               Tree Cafes
             </Link>
             <Link
+              to='/bakery'
+              className='d-flex px-md-3 px-1 text-white'
+              style={{ textDecoration: 'none' }}
+            >
+              Bakery
+            </Link>
+            <Link
               to='/coming_soon'
               className='d-flex px-md-3 px-1 text-white'
               style={{ textDecoration: 'none' }}>Coming Soon</Link>

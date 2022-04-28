@@ -8,12 +8,15 @@ import linkedIn from '../Images/linkedIn.png';
 import endimg from '../Images/endimg.png';
 import comimg from '../Images/comimg.png';
 import upload from '../Images/upload.png';
+import linkedin_bottom from "../Images/linkedin-bottom.png"
+import insta_bottom from "../Images/insta-bottom.png"
+import whatsapp_bottom from "../Images/whtsapp-bottom.png"
 import './comingsoon.css';
 const ComingSoon = () => {
   return (
     <>
       <div
-        className='row px-0 pt-5'
+        className='row mx-0 px-0 pt-5'
         style={{
           backgroundColor: 'rgba(0, 38, 31, 1)',
           color: 'white',
@@ -117,12 +120,21 @@ const ComingSoon = () => {
             </div>
           </div>
           <div className='col-12 d-flex py-3 justify-content-center'>
-            <div className='col-10 col-md-6 d-flex justify-content-center'>
-              <form action='/action_page.php'>
-                <input type='file' id='myFile' name='filename' style={{display:'none' }}/>
-                <button 
+            <div className='col-12 col-md-6 d-flex justify-content-center'>
+              <form className='col-10 col-md-12 col-lg-12' action='/action_page.php'>
+                <label className="col-12 p-5 justify-content-center text-center"
+                style={{borderStyle:'dashed', color: 'white', borderColor: 'white'}}
+                >
+                <input type='file' id='myFile' name='filename' 
+                style={{display:'none' }}
+                />
+                Upload Resume
+                </label>
+                {/* <button 
+                className='p-5'
+                style={{borderStyle:'dashed', color: 'white', borderColor: 'white'}}
                 // onClick={() => this.refs.fileInput.click()}
-                ><img className='upload' src={upload} /></button>
+                > Upload Resume</button> */}
               </form>
               {/* <img className='upload' src={upload} /> */}
             </div>
@@ -141,15 +153,20 @@ const ComingSoon = () => {
             </Button>
           </div>
         </div>
-        <div className='col-12 pb-5'>
+        <div className='col-12 col-md-10 pb-5'>
           <img className='coming-soon' src={comimg} />
         </div>
       </div>
       <div
-        className='col-12 mx-0 d-flex justify-content-center mt-5'
-        style={{ background: 'rgb(229,229,229)' }}
+        className='col-12 mx-0 d-flex py-2'
+        style={{ background: 'rgb(229,229,229)', fontFamily: 'Signika', }}
       >
-        <img className='endimg' src={endimg} />
+        <div className="d-flex px-2 flex-grow-1">Contact us @ +91 - 8168736459</div>
+        <div className="d-flex px-2"><img src={linkedin_bottom} style={{height:"20px"}} /></div>
+        <div className="d-flex px-2"><img src={insta_bottom} style={{height:"20px"}} /></div>
+        <div className="d-flex px-2"><img src={whatsapp_bottom} style={{height:"20px"}} /></div>
+        
+        {/* <img className='endimg' src={endimg} /> */}
       </div>
     </>
   );

@@ -72,7 +72,14 @@
    font-size: 64px;
   }
   .tours-head{
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+  }
+  .bak-head{
     font-size: 40px;
+    justify-content: center;
+    text-align: center;
   }
   .head{
     padding-top: 16px;
@@ -107,6 +114,13 @@
    }
   .tourdetail{
     padding-top: 450px;
+    justify-content: center;
+  }
+  .bakdetail{
+    position: relative;
+     padding-top: -220px; 
+    text-align: center;
+    justify-content: center;
   }
   .cafehead{
     font-size: 45px;
@@ -117,6 +131,33 @@
     height: 45vh;
     width: 35vh;
   }
+  .bakery2{
+    position:relative;
+     top: 30px; 
+   height: 35vh;
+   width: 22vh;
+  border-radius: 11vh;
+   margin-left: 55%;
+  }
+  .bakery3{
+    position: relative;
+    top: -75px;
+   height: 35vh;
+   width: 22vh;
+  border-radius: 11vh;
+   margin-left: 6%;
+  }
+  .bakery1{
+   position: relative;
+    top: -170px;
+   height: 35vh;
+   width: 22vh;
+  border-radius: 11vh;
+   margin-left: 55%;
+  }
+  .bakeryimgs{
+    height: 90vh;
+  }
 }
 @media only screen and (min-width: 769px) {
   .cloth-text{
@@ -125,6 +166,10 @@ font-size: 85px;
   }
   .tours-head{
     font-size: 90px;
+    z-index: 10;
+  }
+  .bak-head{
+    font-size: 70px;
     z-index: 10;
   }
   .head{
@@ -164,6 +209,9 @@ font-size: 85px;
  .tourdetail{
    padding-top: 10px;
  }
+ .bakdetail{
+  padding-top: 30px;
+}
  .cafehead{
    font-size: 70px;
    padding-left: 40px;
@@ -171,5 +219,36 @@ font-size: 85px;
  .cafeimg{
    height: 70vh;
    width: 50vh;
+ }
+ .bakery2{
+   position:relative;
+   top: -50px;
+  height: 45vh;
+  width: 26vh;
+  border-radius: 13vh;
+  margin-left: 50%;
+ }
+ .bakery3{
+   position: relative;
+   top: -230px;
+  height: 45vh;
+  width: 26vh;
+  border-radius: 13vh;
+  margin-left: 10%;
+ }
+ .bakery1{
+  position: relative;
+   top: -360px;
+  height: 45vh;
+  width: 26vh;
+  border-radius: 13vh;
+  margin-left: 50%;
+ }
+ .bakeryimgs{
+   height: 1px;
+   /* overflow: visible; */
+ }
+ .bak-body{
+position: relative;
  }
 }
